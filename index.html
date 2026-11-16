@@ -1,0 +1,20 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AutoCare Pro – Vehicle Service Center Management</title>
+<link rel="icon" href="assets/logo.svg">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<div id="ld"><div class="spin"></div></div>
+<aside id="sb"><div class="brand"><img src="assets/logo.svg" alt=""><div><b>AUTOCARE PRO</b><small>Smart Service. Smooth Experience.</small></div></div><nav id="nav"></nav></aside>
+<div id="main">
+ <header id="top"><button class="btn g" id="burger" onclick="document.body.classList.toggle('open')">☰</button><h1 id="ttl"></h1>
+  <input id="gs" placeholder="Search vehicle, customer…" onkeydown="if(event.key==='Enter'){hq=this.value;nav('history')}">
+  <button class="btn g" onclick="bell()" title="Notifications">🔔</button><span id="dt" class="mu"></span>
+  <div class="usr"><i id="av">A</i><div><b id="un">Admin</b><small class="mu">Administrator</small></div></div></header>
+ <main id="view"></main>
+</div>
+<div id="md" class="md" onclick="if(event.target===this)hide()"><div class="mb" id="mb"></div></div>
+<div id="ts"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script src="queue.js"></script><script src="script.js"></script>
+</body></html>
